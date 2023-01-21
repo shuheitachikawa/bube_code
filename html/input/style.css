@@ -1,8 +1,16 @@
+html {
+  color: white;
+  background: #000;
+}
+
 .row {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 code {
   margin-right: 24px;
   font-weight: bold;
+  display: inline-block;
+  min-width: 250px;
+  font-size: 20px;
 }
