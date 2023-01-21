@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="row">
+      <code class="code">
+        <input type="file" />
+      </code>
+      <input type="file" />
+    </div>
+    <div class="row">
+      <code class="code">
+        <input type="file" />
+      </code>
+      <input type="file" />
+    </div>
+
+    <script>
+      const codes = document.getElementsByClassName("code");
+      for (let i = 0; i < codes.length; i++) {
+        codes[i].innerHTML = codes[i].innerHTML
+          .replace(/</g, "&lt;")
+          .replace(/>/, "&gt;");
+      }
+    </script>
+  </body>
+</html>
