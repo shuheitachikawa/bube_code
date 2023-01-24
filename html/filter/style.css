@@ -1,0 +1,67 @@
+html {
+  color: #404040;
+  background: #D0D0D0;
+  padding-bottom: 1000px;
+}
+
+.p1-1 {
+  filter: blur(2px);
+}
+.p1-2 {
+  filter: blur(5px);
+}
+
+.p2-1 {
+  filter: brightness(70%);
+}
+.p2-2 {
+  filter: brightness(20%);
+}
+
+.p3-1 {
+  filter: contrast(50%);
+}
+.p3-2 {
+  filter: contrast(0%);
+}
+
+.p4-1 {
+  filter: drop-shadow(8px 8px 16px #000);
+}
+
+.p5 {
+  margin-top: 40px;
+}
+.p5-1 {
+  margin-left: 100px;
+  filter: grayscale(50%);
+}
+.p5-2 {
+  margin-left: 100px;
+  filter: grayscale(100%);
+}
+
+.p6-1 {
+  margin-left: 100px;
+  filter: hue-rotate(120deg);
+}
+.p6-2 {
+  margin-left: 100px;
+  filter: hue-rotate(240deg);
+}
+
+.p7-1 {
+  margin-left: 100px;
+  filter: saturate(50%);
+}
+.p7-2 {
+  margin-left: 100px;
+  filter: saturate(150%);
+}
+
+.p8-1 {
+  filter: opacity(50%);
+}
+.p8-2 {
+  filter: opacity(0%);
+}
