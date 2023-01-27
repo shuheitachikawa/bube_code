@@ -1,0 +1,77 @@
+html {
+  color: #404040;
+  padding-bottom: 1000px;
+  background: #D0D0D0;
+}
+
+.container {
+  width: 450px;
+  padding: 40px;
+  background-color: white;
+}
+
+.row {
+  margin-bottom: 16px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.bar {
+  width: 100%;
+  background-color: white;
+  height: 40px;
+  border-radius: 8px;
+  position: relative;
+  background: #D0D0D0;
+}
+
+
+.ball {
+	animation-name: ball;
+	animation-duration: 2s;
+  animation-iteration-count:infinite;
+  background-color: #404040;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+@keyframes ball {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 32px);
+  }
+}
+
+.liner {
+  animation-timing-function: linear;
+}
+
+.ease {
+  animation-timing-function: ease;
+}
+
+.ease-in {
+  animation-timing-function: ease-in;
+}
+
+.ease-out {
+  animation-timing-function: ease-out;
+}
+
+.ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+
+.step-8 {
+  animation-timing-function: steps(8);
+}
