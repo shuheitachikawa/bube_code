@@ -1,29 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
 html {
   color: #404040;
   padding-bottom: 1000px;
   background: #D0D0D0;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 120px;
+  margin-bottom: 1000px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #636363;
+}
+
+.frame {
+  position: relative;
+  width: 360px;
+  padding: 16px;
+}
+
+.image {
+  position: absolute;
+  width: 40px;
+  left: 20px;
+  top: 128px;
+  z-index: -1;
+}
+
+span {
+  font-weight: bold;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .container {
-  width: 450px;
-  padding: 40px;
+  padding: 24px;
   background-color: white;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px #000/0.3;
+  border: 1px solid #c1c1c1;
 }
 
 .row {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .label {
   font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 .bar {
   width: 100%;
   background-color: white;
-  height: 40px;
+  height: 24px;
   border-radius: 8px;
   position: relative;
   background: #D0D0D0;
@@ -35,11 +79,11 @@ html {
 	animation-duration: 2s;
   animation-iteration-count:infinite;
   background-color: #404040;
-  width: 32px;
-  height: 32px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   position: absolute;
-  top: 4px;
+  top: 2px;
   left: 0;
 }
 
