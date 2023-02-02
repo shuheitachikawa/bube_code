@@ -1,17 +1,10 @@
-// 1歳の黒猫かどうかを判定する
-const isAge1BlackCat = (cat) => {
-  if (cat.age === 1) {
-    if (cat.color === "黒") {
-      return true
-    }
-  } else {
-    return false
-  }
-}
+// 等価演算子
+1 == 1 // true
+1 == 2 // false
+1 == "1" // true
 
-const catA = { age: 1, color: "黒" };
-isAge1BlackCat(catA); // true
-
-const catB = { age: 1, color: "白" };
-isAge1BlackCat(catB); // false
+// 厳密等価演算子
+1 === 1 // true
+1 === 2 // false
+1 === "1" // false (ここが違う)
 
