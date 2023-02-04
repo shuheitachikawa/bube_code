@@ -2,19 +2,33 @@
 @bube.code
 では、"1日1分で学ぶJavaScript"をテーマに発信しています。
 
-今回は、条件分岐シリーズその１「if文」についてです。
+今回は、JavaScriptでできる、ブラウザの操作方法について7例紹介します。
 
-if文は、JavaScriptで用いる最も基本的な条件分岐文法です。
+1. クリップボードにコピー
+  const copyText = "コピーしたい文字列";
+  navigator.clipboard.writeText(copyText);
 
-if文自体は知っているという方も多いかと思うので、
-今回は実務でよく使う、
-・早期リターン
-・省略記法
-も紹介します。
-短く書いたり、より読みやすいコードを書くためには必須の知識なので、ぜひ覚えておいてくださいね。
+2. シェア画面を開く
+  const title = "表示したいタイトル";
+  const url = "シェアしたいURL";
+  navigator.share({ title, url }) 
 
-条件分岐に関する内容はシリーズ化していきます。
-#ぶべコード_条件分岐
+3. カメラを起動する
+  navigator.mediaDevices.getUserMedia({video: true})
+
+4. しゃべってもらう
+  const text = "おはよう";
+  speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+
+5. 画面の再読み込み
+  location.reload();
+
+6. アラート表示 / 確認表示
+  alert("こんにちは");
+  const confirmed = confirm("実行しますか？");
+
+7. 使っているブラウザを取得
+  navigator.userAgent
 
 この投稿は保存して、
 いつでも見返せるようにしておくと便利かと思います🐈‍⬛
