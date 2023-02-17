@@ -1,0 +1,26 @@
+html {
+  background: #D0D0D0;
+  padding-bottom: 1000px;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 1000px;
+  height: 400px;
+  object-fit: cover;
+  background: url(./test.png);
+  background-size : cover;
+  filter: brightness(120%);
+}
+
+.item {
+  background: linear-gradient(
+    to right, 
+    rgb(0 0 0 / 0.5), 
+    rgb(0 0 0 / 0)
+  ),
+  url(./cherry_brossam.png);
+}
