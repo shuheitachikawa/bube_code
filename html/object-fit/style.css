@@ -1,0 +1,41 @@
+html {
+  color: #404040;
+  background: #D0D0D0;
+  padding-bottom: 1000px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 600px;
+  height: 400px;
+  background: #404040;
+  border-radius: 4px;
+  overflow: hidden;
+
+  animation-name: resize;
+	animation-duration: 6s;
+  animation-iteration-count:infinite;
+  animation-timing-function: linear;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+
+@keyframes resize {
+  0% {
+    width: 200px;
+  }
+  50% {
+    width: 600px;
+  }
+  100% {
+    width: 200px;
+  }
+}
