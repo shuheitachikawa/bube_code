@@ -1,7 +1,14 @@
+const obj = {
+  value: 10,
+  myFunction: function () {
+    console.log(this.value);
+  },
+  myArrowFunction: () => {
+    console.log(this.value);
+  },
+};
 
-
-const double = value => value * 2;
-
-
+obj.myFunction(); // 10
+obj.myArrowFunction(); // undefined
 
 
