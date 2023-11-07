@@ -1,0 +1,35 @@
+html {
+  color: #404040;
+  background: #F3F3F3;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.section {
+  height: 100%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.section:nth-child(1) {
+  background-image: url(./3.PNG);
+  background-position: center;
+}
+.section:nth-child(2) {
+  background-image: url(./e68776dd-c810-4f73-af7c-8a814b4ea296.webp);
+  background-position: center;
+}
+.section:nth-child(3) {
+  background-image: url(./7b7dec1f-98f9-4f68-95a4-9f366894417f.webp);
+  background-position: center;
+}

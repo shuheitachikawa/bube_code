@@ -1,0 +1,15 @@
+
+body {
+  height: 100vh;
+}
+
+.section {
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.section:nth-child(1) {
+  background-image: url(./img1.jpg);
+}
+/* section2,3 も同様に背景画像指定 */
+
